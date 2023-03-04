@@ -1,0 +1,170 @@
+*{
+    padding:0;
+    margin: 0;
+    box-sizing: border-box;
+   
+}
+/*propiedades del header-----------------*/
+header{ 
+    display: flex;
+    width: 100%;
+    height: 120px;
+    background-image: linear-gradient(rgba(29, 29, 156, 0.849), rgba(46, 46, 175, 0.651),rgba(79, 79, 199, 0.438),rgba(99, 99, 230, 0.288),rgba(72, 72, 255, 0));
+    position:relative; 
+    
+}
+.a1{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    
+}
+.a1 img{
+    margin-left: 40px;
+    width: 20%;
+    height: 90%;
+    
+}
+.a2{
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+.a2 a{
+    color: white;
+    font-weight: bold;
+    font-size: 22px;
+    margin-left: 30px;
+    margin-right: 30px;
+    text-decoration: none;
+}
+/* aqui termina el header-------------------*/
+
+/*propiedades del body--------------------*/
+.s1{
+    display: flex;
+    width: 100%;
+    height: 350px;   
+}
+.photo{
+    justify-content: center;
+    margin-top: 20px;
+    width: 50%;
+    height: 100%;
+    
+}
+.photo img{
+    margin-left: 40%;
+    height: 70%;
+    width: 45%;
+}
+.photo h2{
+    margin-left: 47%;
+}
+.photo p{
+    justify-content: center;
+    margin-left: 47%;
+}
+.description{
+    width: 70%;
+    height: 80%;  
+}
+.description h2{
+    margin-top: 30px;
+    text-align: center;
+}
+.description p{
+    margin-left: 120px;
+    margin-right: 120px;
+    margin-top: 40px;
+    text-align:center;
+    font-size: 20px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+.description h3{
+    text-align: center;
+    margin-top: 30px;
+}
+.description ol{
+    justify-content: center;
+}
+h1{
+    margin-top: 40px;
+    text-align: center;
+    margin-bottom: 40px; 
+}
+.s2{
+    margin-left: 5%;
+    margin-right: 55;
+    display: flex;
+    width: 90%;
+    height: 430px;
+}
+.s2 img {
+    width: 0px;
+    flex-grow: 1;
+    object-fit: cover;
+    opacity: .8;
+    transition: .5s ease;
+}
+.s2 img:hover{
+    cursor: crosshair;
+    width: 300px;
+    opacity: 1;
+    filter: contrast(120%);
+}
+/* termina el body------------------------*/
+/*comienza el footer-----------------------------*/
+footer{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 120px;
+    background-color: #2d2d86;
+}
+footer img{
+    height: 40px;
+    width: 50px;
+}
+.f{
+    height: 60%;     
+}
+.f1{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+.f1::after,.f1::before{
+    margin-top: 20px;
+    content:'';
+    position: absolute;
+    width: 250px;
+    height: 3px;
+    background-color: black;    
+}
+.f1::before{
+    left: 330px;
+
+}
+.f1::after{
+    right: 330px;
+}
+section .f2 img{
+    height: 20px;
+    width: 25px;
+
+}
+.f2{
+    margin-top: 10px;
+    justify-content: center;
+    display:flex;
+}
+/*termina el footer----------------*/
+
+
+
