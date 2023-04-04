@@ -1,1 +1,4 @@
-SEGUNDO INTENTO POR HACER MI PORTAFOLIO ONLINE 
+Repositorio para sacar online mi portafolio 
+
+
+- version 2.1
