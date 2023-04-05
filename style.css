@@ -53,13 +53,15 @@ header{
 /*propiedades del body--------------------*/
 body{
     color: white;
-    background-color: #02021d;
+    background-color: #010113;
 }
 h1{
     font-size: 50px;
+    text-shadow: 0 0 10px rgb(4, 31, 234);
 }
 h2{
     font-size: 40px;
+    text-shadow: 0 0 10px rgba(4, 31, 234, 0.903);
 }
 .text{
     font-size: 20px;
@@ -84,6 +86,9 @@ h2{
 .right img{
     width: 320px;
     height: 320px;
+    border: 8px solid white;
+    border-radius: 50%;
+    
 }
 .name{
     display: grid;
@@ -120,7 +125,7 @@ h2{
 .certificates{
 
     display: flex;
-    width: 1300px;
+    width: 100%;
     height: 450px;
 }
 .certificates img{
@@ -145,7 +150,7 @@ footer{
     align-items: center;
     width: 100%;
     height: 120px;
-    background-color: #2d2d86;
+    background-color: #ffffff;
 }
 footer img{
     height: 40px;
@@ -159,21 +164,6 @@ footer img{
     justify-content: center;
     margin-bottom: 10px;
 }
-.f1::after,.f1::before{
-    margin-top: 20px;
-    content:'';
-    position: absolute;
-    width: 250px;
-    height: 3px;
-    background-color: black;    
-}
-.f1::before{
-    left: 330px;
-
-}
-.f1::after{
-    right: 330px;
-}
 section .f2 img{
     height: 20px;
     width: 25px;
@@ -184,7 +174,44 @@ section .f2 img{
     justify-content: center;
     display:flex;
 }
+.f2 .text_footer{
+    color: black;
+}
 /*termina el footer----------------*/
-
+/*----------MEDIA QUERIS ----------------*/
+@media (max-width: 720px) { 
+    h1{
+        font-size: 40px;
+    }
+    h2{
+        font-size: 30px;
+    }
+    .text{
+        font-size: 20px;
+    }
+    .container1{
+         flex-direction: column;
+         align-items: center;
+         height: auto;
+         gap: 12px;
+    }
+    .a2{
+     display: none;
+    }
+    .right .photo img{
+         width: 280px;
+         height: 280px;
+    }
+     .left{
+         width: 100%;
+         gap: 12px;
+     }
+     .left .description{
+        gap: 8px;
+     }
+     .left .skills{
+        gap: 8px;
+     }
+ }
 
 
