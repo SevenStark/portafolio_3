@@ -22,7 +22,7 @@
             <a>|</a>
             <a href="#">CONTACT ME</a>
             <a>|</a>
-            <a>ES</a>
+            <a id="idioma">ENGLISH</a>   <!--aqui le agrege el id de idioma para identificarlo luego-->
         </section>      
    </header>  
    <!-- AQUI TERMINA LA PARTE DEL NAVBAR-->
@@ -43,23 +43,21 @@
             </div>
             <div class="left">
                 <div class="description">
-                    <h1>DESCRIPCION</h1>
-                    <p class="text">Soy desarrollador front-end en formacion
-                                    con experiencia basica en la creacion de paginas web responsive y estaticas 
-                                    que ayudan a las empresas a mostrar sus productos y retribuir su inversion en TI.</p>
+                    <h1 id="titulo_descripcion"></h1>
+                    <p id="descripcion" class="text"></p>
                 </div>
                 <div class="skills">
                     <h1>SKILLS</h1>
                     <ul>
-                        <li class="text">- C++ | Aplicacion de domicilios</li>
-                        <li class="text">- Arduino | Manejo de actuadores de hardware </li>
+                        <li id="skill1" class="text"></li>
+                        <li id="skill2" class="text"> </li>
                         <li class="text">- HTML | CSS | JS | REACT</li>
                     </ul>
                 </div>
             </div>    
         </div>    
         <div class="container2">
-            <h1>DIPLOMAS Y EXPERIENCIAS</h1>
+            <h1 id="dye"></h1>
             <section class="certificates">
                 <img src="imagenes/cppbasico.png">
                 <img src="imagenes/POO.png">
@@ -85,6 +83,6 @@
     
 
    
-  
+  <script src="index.js"></script>
 </body>
 </html>
