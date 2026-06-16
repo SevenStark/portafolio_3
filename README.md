@@ -1,5 +1,5 @@
 # Jefferson Perez — Professional Portfolio
-# Version...(4.1)
+# Version...(4.2)
 
 Electronic engineer and full stack developer. This portfolio showcases my projects, certifications and web development skills.
 
@@ -12,10 +12,10 @@ Electronic engineer and full stack developer. This portfolio showcases my projec
 
 ## Features
 
-- Responsive design with scroll-snap (3 sections)
+- Responsive design 
 - Lightbox to view full certificates
 - Spanish/English language toggle
-- Mobile hamburger menu
+- Mobile 
 - Scroll animations
 
 ## Live site
