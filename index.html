@@ -1,88 +1,172 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PORTAFOLIO</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta name="description" content="Portafolio profesional de Jefferson Perez - Full Stack Developer">
+    <meta property="og:title" content="Jefferson Perez | Front-End Developer">
+    <meta property="og:description" content="Portafolio profesional con proyectos, certificaciones y experiencia en desarrollo web">
+    <meta property="og:type" content="website">
+    <title>Jefferson Perez | Front-End Developer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Secular+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
     <link rel="icon" href="imagenes/monitor.ico">
-
 </head>
 <body>
-    <!-- AQUI COMIENZA LA PARTE DEL NAVBAR-->
-    <header>    
-        <section class="a1">
-            <img src="imagenes/programacion.png">
-        </section>
-        <section class="a2">
-            <a href="#">HOME</a>
-            <a>|</a>
-            <a href="https://github.com/SevenStark" target="_blank">PORTAFOLIO</a>
-            <a>|</a>
-            <a href="https://mail.google.com/mail/" target="_blank">CONTACT ME</a>
-            <a>|</a>
-            <a id="idioma">ENGLISH</a>   <!--aqui le agrege el id de idioma para identificarlo luego-->
-        </section>      
-   </header>  
-   <!-- AQUI TERMINA LA PARTE DEL NAVBAR-->
 
-    <!-- DESDE AQUI EMPIEZA EL BODY -->
-    
-    <div class="main_container">
-        <div class="container1">
-            <div class="right">
-                <div class="photo">
-                    <img src="imagenes/foto portada.png">
+    <header>
+        <nav class="navbar">
+            <a href="#" class="nav-logo">
+                <img src="imagenes/programacion.png" alt="Logo" loading="lazy">
+            </a>
+            <button class="nav-toggle" aria-label="Abrir menú">
+                <span></span><span></span><span></span>
+            </button>
+            <ul class="nav-links">
+                <li><a href="#inicio" class="active">INICIO</a></li>
+                <li><span class="nav-sep">|</span></li>
+                <li><a href="https://github.com/SevenStark" target="_blank" rel="noopener">PORTAFOLIO</a></li>
+                <li><span class="nav-sep">|</span></li>
+                <li><a href="mailto:jeffersonp9908@gmail.com">CONTACT ME</a></li>
+                <li><span class="nav-sep">|</span></li>
+                <li><a id="idioma" class="lang-toggle">ENGLISH</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="inicio" class="hero">
+            <div class="hero-grid">
+                <div class="hero-left">
+                    <div class="hero-photo">
+                        <img src="imagenes/foto portada.png" alt="Foto de perfil de Jefferson Perez">
+                        <div class="hero-photo-ring"></div>
+                    </div>
+                    <div class="hero-info">
+                        <h1 class="hero-name">Jefferson Perez</h1>
+                        <p class="hero-role">Full Stack Developer</p>
+                        <p class="hero-email">jeffersonp9908@gmail.com</p>
+                    </div>
                 </div>
-                <div class="name">
-                    <h2>Jefferson Perez </h2>
-                    <p class="text">Front-End Developer</p> 
-                    <p class="text"> jeffersonp9908@gmail.com</p>
+                <div class="hero-right">
+                    <div class="hero-description">
+                        <h2 id="titulo_descripcion">DESCRIPCION</h2>
+                        <p id="descripcion">Soy ingeniero electrónico, desarrollador de software y desarrollador web full stack con experiencia en la creación de páginas web responsivas, estáticas y dinámicas que ayudan a las empresas a mostrar sus productos y retribuir su inversión en TI</p>
+                    </div>
+                    <div class="hero-skills">
+                        <h2>SKILLS</h2>
+                        <ul>
+                            <li id="skill1" class="skill-badge">C++ | C# | Python | JavaScript</li>
+                            <li class="skill-badge">HTML | CSS | JS | REACT | ANGULAR</li>
+                            <li id="skill2" class="skill-badge">mySQL | PostgreSQL </li>                            
+                        </ul>
+                    </div>
                 </div>
             </div>
-            <div class="left">
-                <div class="description">
-                    <h1 id="titulo_descripcion"></h1>
-                    <p id="descripcion" class="text"></p>
-                </div>
-                <div class="skills">
-                    <h1>SKILLS</h1>
-                    <ul>
-                        <li id="skill1" class="text"></li>
-                        <li id="skill2" class="text"> </li>
-                        <li class="text">- HTML | CSS | JS | REACT</li>
-                    </ul>
-                </div>
-            </div>    
-        </div>    
-        <div class="container2">
-            <h1 id="dye"></h1>
-            <section class="certificates">
-                <img src="imagenes/cppbasico.png">
-                <img src="imagenes/POO.png">
-                <img src="imagenes/pooc++.png">
-                <img src="imagenes/cppbasico.png">
-                <img src="imagenes/Certificado 1 IBM.jpg">
-            </section>
-        </div>
-    </div>
-    <footer>
-        <section class="f">
-            <section class="f1">
-            <a href="https://github.com/SevenStark" target="_blank"> <img  src="imagenes/1051377.png"></a>
-            <a href="https://mail.google.com/mail/" target="_blank"> <img src="imagenes/6367242.png"></a>
-            <a href="https://www.linkedin.com/in/jefferson-perez-frontend/" target="_blank"><img src="imagenes/linkedin.png"></a> 
-            </section>
-            <section class="f2">
-                <img  class="ubi"src="imagenes/ubi.png">
-                <p class="text_footer">Meta, Colombia</p>
-            </section>
-       </section>
-      </footer>
-    
+        </section>
 
-   
-  <script src="index.js"></script>
+        <section class="projects" id="proyectos">
+            <div class="section-header">
+                <h2 id="projects_title">PROYECTOS</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="projects-grid" id="projectsGrid">
+                <article class="project-card">
+                    <div class="project-image">
+                        <img src="imagenes/foto portada.jpg" alt="Vista previa del proyecto" loading="lazy">
+                        <div class="project-overlay">
+                            <a href="#" class="project-link">Ver proyecto →</a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title">Nombre del Proyecto</h3>
+                        <p class="project-desc">Breve descripción del proyecto, tecnologías usadas y el problema que resuelve.</p>
+                        <div class="project-tags">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JS</span>
+                        </div>
+                    </div>
+                </article>
+                <article class="project-card">
+                    <div class="project-image">
+                        <img src="imagenes/foto portada.jpg" alt="Vista previa del proyecto" loading="lazy">
+                        <div class="project-overlay">
+                            <a href="#" class="project-link">Ver proyecto →</a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title">Nombre del Proyecto</h3>
+                        <p class="project-desc">Breve descripción del proyecto, tecnologías usadas y el problema que resuelve.</p>
+                        <div class="project-tags">
+                            <span>React</span>
+                            <span>Node.js</span>
+                        </div>
+                    </div>
+                </article>
+                <article class="project-card">
+                    <div class="project-image">
+                        <img src="imagenes/foto portada.jpg" alt="Vista previa del proyecto" loading="lazy">
+                        <div class="project-overlay">
+                            <a href="#" class="project-link">Ver proyecto →</a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title">Nombre del Proyecto</h3>
+                        <p class="project-desc">Breve descripción del proyecto, tecnologías usadas y el problema que resuelve.</p>
+                        <div class="project-tags">
+                            <span>C++</span>
+                            <span>Arduino</span>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="certificates" id="certificaciones">
+            <div class="section-header">
+                <h2 id="dye">CERTIFICACIONES Y EXPERIENCIAS</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="certificates-track">
+                <img src="imagenes/BootcampCun.png" alt="Certificado Bootcamp CUN/MinTIC" loading="lazy">
+                <img src="imagenes/UnirTitle.png" alt="Certificado UNIR españa" loading="lazy">
+                <img src="imagenes/cppbasico.png" alt="Certificado C++ Básico" loading="lazy">
+                <img src="imagenes/POO.png" alt="Certificado Programación Orientada a Objetos" loading="lazy">
+                <img src="imagenes/pooc++.png" alt="Certificado POO en C++" loading="lazy">
+                <img src="imagenes/Certificado 1 IBM.jpg" alt="Certificado IBM" loading="lazy">
+            </div>
+            <footer>
+                <div class="footer-content">
+                    <div class="footer-social">
+                        <a href="https://github.com/SevenStark" target="_blank" rel="noopener" aria-label="GitHub">
+                            <img src="imagenes/1051377.png" alt="GitHub" loading="lazy">
+                        </a>
+                        <a href="mailto:jeffersonp9908@gmail.com" aria-label="Email">
+                            <img src="imagenes/6367242.png" alt="Email" loading="lazy">
+                        </a>
+                        <a href="https://www.linkedin.com/in/jefferson-perez-frontend/" target="_blank" rel="noopener" aria-label="LinkedIn">
+                            <img src="imagenes/linkedin.png" alt="LinkedIn" loading="lazy">
+                        </a>
+                    </div>
+                    <div class="footer-location">
+                        <img src="imagenes/ubi.png" alt="Ubicación" loading="lazy">
+                        <p>Colombia</p>
+                    </div>
+                    <p class="footer-copy">© 2024 Jefferson Perez — Todos los derechos reservados</p>
+                </div>
+            </footer>
+        </section>
+    </main>
+
+    <div class="modal-overlay" id="modalOverlay">
+        <button class="modal-close" id="modalClose">&times;</button>
+        <img class="modal-image" id="modalImage" src="" alt="">
+    </div>
+
+    <script src="index.js" defer></script>
 </body>
 </html>
